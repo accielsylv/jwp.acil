@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+	display: flex;
+  	flex-direction: column;
+	min-height: 100vh;
+}
+
+/*Navigation*/
+::placeholder {
+    font-family: "Martel", sans-serif;
+  }
+
+.nav {
+	background: linear-gradient(to right bottom, #48ADEA, #5CB4EA, #6DBBEA, #7DC1EB, #8DC8EB);
+	display: flex;
+	align-items: center;
+	padding: 2% 3%;
+	justify-content: space-between;
+    font-family: "Martel", sans-serif;
+}
+
+.nav .logo {
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.nav .admin-profile {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+}
+
+.nav .admin-profile i {
+	padding-right: 10px;
+}
+
+/*Content*/
+.content {
+	padding: 0 3%;
+	flex: 1;
+}
+
+.content .admin-create-box {
+    display: flex;
+    flex-direction: column;
+	border: 5px solid transparent;
+    border-image: linear-gradient(to right bottom, #48ADEA, #5CB4EA, #6DBBEA, #7DC1EB, #8DC8EB) 1 round;
+	margin: 7% 20% 0;
+	padding: 1% 4%;
+	font-family: "Martel", sans-serif;
+}
+
+.content .admin-create-box h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content .admin-create-box form {
+    font-size: 15px;
+}
+
+.content .admin-create-box form input, textarea {
+    background-color: lightgrey;
+    border-radius: 40px;
+    border: none;
+	padding: 2% 3%;
+    margin: 1% 0 2% 0;
+	font-family: "Martel", sans-serif;
+}
+
+.content .admin-create-box form textarea, .title {
+    width: 60%;
+	resize: vertical;
+}
+
+.content .admin-create-box .ubah, .cancel {
+    float: right;
+}
+
+.content .admin-create-box form input[value="Ubah!"] {
+    color: white;
+    background: linear-gradient(to right bottom, #48ADEA, #5CB4EA, #6DBBEA, #7DC1EB, #8DC8EB);
+	margin-right: 2%;
+}
+
+.content .admin-create-box form button {
+    color: black;
+    background: lightgray;
+	border: none;
+    border-radius: 40px;
+    padding: 2% 3%;
+	margin: 1% 2% 0 0;
+}
+
+/*Footer*/
+.footer {
+	background: linear-gradient(to right bottom, #48ADEA, #5CB4EA, #6DBBEA, #7DC1EB, #8DC8EB);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    font-family: "Martel", sans-serif;
+	font-weight: lighter;
+    width: 100%;
+	flex-shrink: 0;
+}
+
+
+.footer .copyright {
+    padding-right: 3%;
+	color: white;
+	display: flex;
+    width: 100%;
+	justify-content: flex-end;
+	font-size: 10px;
+}

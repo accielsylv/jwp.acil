@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  	flex-direction: column;
+	min-height: 100vh;
+}
+
+/*Navigation*/
+.nav {
+	background: linear-gradient(to right bottom, #48ADEA, #5CB4EA, #6DBBEA, #7DC1EB, #8DC8EB);
+	display: flex;
+	align-items: center;
+	padding: 2% 3%;
+	justify-content: space-between;
+    font-family: "Martel", sans-serif;
+}
+
+.nav .logo {
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.nav .menu {
+	display: flex;
+	align-items: center;
+}
+
+.nav .menu li {
+	display:flex;
+	margin: 0 50px;
+
+}
+
+.nav .menu li a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.nav .menu li a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.nav .search-bar form {
+	display: flex;
+}
+
+.nav .search-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav .search-bar input {
+	border-radius: 40px;
+	border: 2px solid black;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	padding: 5px 10px;
+	margin-right: 10px;
+}
+
+.nav .search-bar button {
+	border-radius: 40px;
+	border: 2px solid black;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+/*Content*/
+.content {
+	padding: 2% 10%;
+    flex: 1;
+}
+
+.content .article-title {
+	font-family: "Martel", sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 2%;
+}
+
+.content hr {
+    border: none;
+    height: 5px;
+    background: linear-gradient(to right bottom, #48ADEA, #5CB4EA, #6DBBEA, #7DC1EB, #8DC8EB);
+    margin-bottom: 2%;
+}
+
+.content .article-content {
+	font-family: "Martel", sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.content .article-content .meta-info {
+    font-size: 10px;
+}
+
+.content .article-comment {
+	border: 5px solid transparent;
+    border-image: linear-gradient(to right bottom, #48ADEA, #5CB4EA, #6DBBEA, #7DC1EB, #8DC8EB) 1 round;
+    margin-top: 5%;
+	padding: 2% 4%;
+	font-family: "Martel", sans-serif;
+}
+
+.content .article-comment .user hr {
+    border: none;
+    height: 3px;
+    width: 40%;
+    background: linear-gradient(to right bottom, #48ADEA, #5CB4EA, #6DBBEA, #7DC1EB, #8DC8EB);
+    margin-bottom: 2%;
+    margin-left: 0;
+}
+
+.content .article-comment .user .meta-info {
+	font-size: 10px;
+    margin-bottom: 4%;
+}
+
+.content .article-comment form input, textarea {
+    background-color: lightgrey;
+    border-radius: 40px;
+    border: none;
+	padding: 1% 2%;
+    margin: 1% 0 2% 0;
+	font-family: "Martel", sans-serif;
+}
+
+.content .article-comment form textarea, .box {
+    width: 40%;
+	resize: vertical;
+}
+
+.content .article-comment form input[value="Submit!"] {
+    color: white;
+    background: linear-gradient(to right bottom, #48ADEA, #5CB4EA, #6DBBEA, #7DC1EB, #8DC8EB);
+	margin-right: 2%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+/*Footer*/
+.footer {
+	background: linear-gradient(to right bottom, #48ADEA, #5CB4EA, #6DBBEA, #7DC1EB, #8DC8EB);
+	display: flex;
+	align-items: center;
+	padding: 0 3%;
+	justify-content: space-between;
+    font-family: "Martel", sans-serif;
+	font-weight: lighter;
+    flex-shrink: 0;
+}
+
+.footer .reach h3 {
+	padding-top: 3%;
+	font-size: 15px;
+	color: white;
+}
+
+.footer .reach table {
+	font-size: 10px;
+	margin: 0 auto;
+}
+
+.footer .reach table td{
+	padding-right: 10px;
+}
+
+.footer .reach table td:nth-child(2), td:nth-child(4) {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.footer .copyright {
+	color: white;
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 6%;
+	font-size: 10px;
+}

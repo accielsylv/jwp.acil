@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+	display: flex;
+  	flex-direction: column;
+	min-height: 100vh;
+}
+
+/*Navigation*/
+.nav {
+	background: linear-gradient(to right bottom, #48ADEA, #5CB4EA, #6DBBEA, #7DC1EB, #8DC8EB);
+	display: flex;
+	align-items: center;
+	padding: 2% 3%;
+	justify-content: space-between;
+    font-family: "Martel", sans-serif;
+}
+
+.nav .logo {
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.nav .menu {
+	display: flex;
+	align-items: center;
+    list-style: none;
+	margin-right: 60px;
+}
+
+.nav .menu .margin {
+	margin-right: 50px;
+}
+.nav .menu a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.nav .menu a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.nav .admin-profile {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+}
+
+.nav .admin-profile i {
+	padding-right: 10px;
+}
+
+/*Content*/
+.content {
+	padding: 0 3%;
+	flex: 1;
+}
+
+.content .article-view, .comment-view {
+	border: 5px solid transparent;
+    border-image: linear-gradient(to right bottom, #48ADEA, #5CB4EA, #6DBBEA, #7DC1EB, #8DC8EB) 1 round;
+	margin: 4% 20% 2%;
+	padding: 1% 2%;
+	border-radius: 40px;
+	font-family: "Martel", sans-serif;
+}
+
+.content .view, .create-view {
+	display: grid;
+	justify-content: center;
+    align-items: center;
+}
+
+.content .span {
+	text-align: center;
+	font-size: 20px;
+}
+
+.content .view h3 {
+	font-size: 20px;
+}
+
+.content .create-view a {
+	color: #48ADEA;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom: 10%;
+}
+
+.content .button {
+	text-align: right;
+	margin-right: 20%;
+}
+
+.content .button input {
+    color: white;
+    background: linear-gradient(to right bottom, #48ADEA, #5CB4EA, #6DBBEA, #7DC1EB, #8DC8EB);
+	border-radius: 40px;
+    border: none;
+	padding: 1% 2%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+/*Footer*/
+.footer {
+	background: linear-gradient(to right bottom, #48ADEA, #5CB4EA, #6DBBEA, #7DC1EB, #8DC8EB);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    font-family: "Martel", sans-serif;
+	font-weight: lighter;
+    width: 100%;
+	flex-shrink: 0;
+}
+
+
+.footer .copyright {
+    padding-right: 3%;
+	color: white;
+	display: flex;
+    width: 100%;
+	justify-content: flex-end;
+	font-size: 10px;
+}
